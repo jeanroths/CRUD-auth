@@ -1,8 +1,9 @@
 package main 
 
 import ( 
-	"github.com/gin-conic/gin"
+	"github.com/gin-gonic/gin"
 	godotenv "github.com/joho/godotenv"
+	"github.com/jeanroths/CRUD-auth/src/controller/routes"
 	"log"
 )
 func main() {
