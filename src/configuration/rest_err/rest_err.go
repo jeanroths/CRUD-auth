@@ -1,0 +1,62 @@
+package rest_err
+
+type RestErr struct {
+	Message string `json:"message"`
+	Err srting `json:"error"`
+	Code int64 `json:"code"`
+	Causes []Causes `json:"causes"`
+}
+
+type Causes struct {
+	Field string `json:"field"`
+	Message string `json:"message"`
+}
+
+func NewRestErr(message, err string, code int64, causes []Causes) *RestErr {
+	return &RestErr{
+		Message: message,
+		Err: err,
+		Code: code,
+		Causes: causes,
+	}
+}
+func NewBadRequestError(message srting) *RestErr {
+	return &RestErr{
+		Message: message,
+		Err: "bad_request",
+		Code: http.StatusBadRequest,
+	}
+}
+
+func NewBadRequestValidationError(message srting) *RestErr {
+	return &RestErr{
+		Message: message,
+		Err: "bad_request",
+		Code: http.StatusBadRequest,
+		Causes: causes,
+	}
+}
+
+func NewInternalServerError(message srting) *RestErr {
+	return &RestErr{
+		Message: message,
+		Err: "internal_server_error",
+		Code: http.StatusInternalServerError,
+	}
+}
+
+func NewNotFoundError(message string) *RestErr {
+	return &RestErr{
+		Message: message,
+		Err:     "not_found",
+		Code:    http.StatusNotFound,
+	}
+}
+
+func NewForbiddenError(message string) *RestErr {
+	return &RestErr{
+		Message: message,
+		Err:     "forbidden",
+		Code:    http.StatusForbidden,
+	}
+}

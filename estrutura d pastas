@@ -1,0 +1,15 @@
+src
+|- controller - Entrada e validação dos dados
+|- model - Regras de negócio e objeto principal
+|- view - Gerenciamento de dados (publico/privado) e converters
+|- tests - Testes de integração da aplicação
+|- configuration - Pacotes para conexão, arquivos de configuração, etc.
+main.go - iniciar aplicação
+.env - variaveis de configuração
+.gitignore - remover arquivos git
+
+
+	GINGONIC
+framework para roteamento e rest no go
+
+
