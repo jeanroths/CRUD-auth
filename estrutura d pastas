@@ -12,4 +12,13 @@ main.go - iniciar aplicação
 	GINGONIC
 framework para roteamento e rest no go
 
+	go get -u github.com/gin-gonic/gin
+	
+- Precisamos ter quais objetos e informações vamos manusear dentro do projeto
 
+- Criar pasta chamada model/request e model/response dentro de controller para criar objetos de entrada e saída da aplicação
+- Em request, criar um objeto com os campos: Name string, Password string, Email string
+- Em response, criar objeto com os campos: ID string, Email string, Name string
+
+- Adicionar propriedade de json em ambos os objetos para que seja possível converter de json para objeto e vice versa
+- Add objeto request no ShouldBindJson dentro do controller
