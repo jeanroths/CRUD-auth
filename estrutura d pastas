@@ -22,3 +22,14 @@ framework para roteamento e rest no go
 
 - Adicionar propriedade de json em ambos os objetos para que seja possível converter de json para objeto e vice versa
 - Add objeto request no ShouldBindJson dentro do controller
+
+	GO PLAYGROUND VALIDATOR
+	
+	go get github.com/go-playground/validator/v10
+	
+	Video 8 e 9 - validação
+	
+	ZAP
+framework de log em go
+
+	go get -u go.uber.org/zap	

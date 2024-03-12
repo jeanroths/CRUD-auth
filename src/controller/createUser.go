@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/jeanroths/CRUD-auth/src/controller/model/request"
 	"github.com/jeanroths/CRUD-auth/src/configuration/rest_err"
+	"github.com/jeanroths/CRUD-auth/src/configuration/logger"
 	"fmt"
 	"log"
 )
