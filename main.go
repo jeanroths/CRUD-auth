@@ -6,6 +6,8 @@ import (
 	"github.com/jeanroths/CRUD-auth/src/controller/routes"
 	"github.com/jeanroths/CRUD-auth/src/configuration/logger"
 	"log"
+	"github.com/jeanroths/CRUD-auth/src/configuration/database"
+	"context"
 )
 func main() {
 	logger.Info("About to start application")
@@ -14,7 +16,8 @@ func main() {
 		log.Fatal("Error loading .env file")
 	}
 
-	mongo
+	mongodb.NewMongoDBConnection(context.Background())
+
 	router := gin.Default()
 	routes.InitRoutes(&router.RouterGroup)
 	if err:= router.Run(":8080");	err != nil {
