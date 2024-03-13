@@ -33,3 +33,7 @@ framework para roteamento e rest no go
 framework de log em go
 
 	go get -u go.uber.org/zap	
+	
+	MONGO-GO-DRIVER
+	
+	go get go.mongodb.org/mongo-driver/mongo

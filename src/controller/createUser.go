@@ -8,12 +8,8 @@ import (
 	"go.uber.org/zap"
 	"net/http"
 	"github.com/jeanroths/CRUD-auth/src/controller/model/response"
-	"github.com/jeanroths/CRUD-auth/src/model"
 )
 
-var (
-	UserDomainInterface model.UserDomainInterface
-)
 
 func CreateUser(c *gin.Context){
 	logger.Info("Init CreateUser controller",
