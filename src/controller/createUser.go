@@ -8,6 +8,7 @@ import (
 	"go.uber.org/zap"
 	"net/http"
 	"github.com/jeanroths/CRUD-auth/src/controller/model/response"
+	"github.com/jeanroths/CRUD-auth/src/model"
 )
 
 var (

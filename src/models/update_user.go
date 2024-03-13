@@ -1,4 +1,4 @@
-package model
+package models
 
 import (
 	"github.com/jeanroths/CRUD-auth/src/configuration/rest_err"
@@ -6,7 +6,7 @@ import (
 	"go.uber.org/zap"
 )
 
-func (*UserDomain) CreateUser(UserDomain) *rest_err.RestErr {
-	logger.Info("Init createUser model", zap.String("journey", "createUser"))
+func (*UserDomain) UpdateUser(string, UserDomain) *rest_err.RestErr{
+	logger.Info("Init updateUser model", zap.String("journey", "updateUser"))
 	return nil
 }
